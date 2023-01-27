@@ -1,6 +1,9 @@
 * {
     font-family: sans-serif;
     color: white;
+    /* Debuging 
+     * outline: rgba(255, 255, 255, 0.5) 4px solid;
+     */
 }
 
 body {
@@ -16,17 +19,41 @@ main {
     border-radius: 8px;
     border: solid #F23a5c 3px;
     transition-duration: .2s;
+    padding: 10px 10px 20px 20px;
+    /* padding-inline: 20px; */
+
 }
 
 main:hover {
     box-shadow: #F23a5c 3px 3px 0px;
 }
 
-main > h1 {
-    padding: 10px;
-    padding-inline: 20px;
-}
 
 main > h1 > span {
     font-size: 16px;
+}
+
+main > ul {
+    list-style: none;
+}
+
+main > ul > li {
+    float: left;
+    
+}
+
+main > ul > li > a {
+    text-decoration: none;
+    padding: 4px;
+    padding-inline: 6px;
+    background-color: #434343;
+    border-radius: 4px;
+    margin-inline: 4px;
+    border: solid #F23a5c 1px;
+    
+}
+
+main > ul > li > a:hover {
+    box-shadow: #F23a5c 2px 2px 0px;
+    transition-duration: .2s;
 }
