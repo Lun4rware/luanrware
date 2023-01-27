@@ -1,6 +1,35 @@
+html,body{ 
+	width:100%;
+	height: 100%;
+  overflow: hidden;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+canvas {
+  display:block;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #232323;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* End Particles.js CSS Code */
+
 * {
     font-family: sans-serif;
     color: white;
+     /* * Debuging  */
+     /* outline: rgba(255, 255, 255, 0.5) 4px solid; */
+    
 }
 
 body {
@@ -16,17 +45,39 @@ main {
     border-radius: 8px;
     border: solid #F23a5c 3px;
     transition-duration: .2s;
+    padding: 10px 10px 20px 20px;
+
 }
 
 main:hover {
     box-shadow: #F23a5c 3px 3px 0px;
 }
 
-main > h1 {
-    padding: 10px;
-    padding-inline: 20px;
-}
 
 main > h1 > span {
     font-size: 16px;
+}
+
+main > ul {
+    list-style: none;
+}
+
+main > ul > li {
+    float: left;
+    
+}
+
+main > ul > li > a {
+    text-decoration: none;
+    padding: 4px;
+    padding-inline: 6px;
+    background-color: #434343;
+    border-radius: 4px;
+    margin-inline: 4px;
+    border: solid #F23a5c 2px;
+    transition-duration: .3s;
+}
+
+main > ul > li > a:hover {
+    box-shadow: #F23a5c 2px 2px 0px;
 }
