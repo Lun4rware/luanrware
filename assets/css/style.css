@@ -41,35 +41,42 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+main div.one {
+    position: relative;
     background-color: #333333;
     border-radius: 8px;
     border: solid #F23a5c 3px;
     transition-duration: .2s;
-    padding: 10px 10px 20px 20px;
-
+    padding: 10px 10px 50px 20px;
+    overflow: hidden;
+    height: 110px;
+    width: 300px;
 }
 
-main:hover {
+main div.one:hover {
     box-shadow: #F23a5c 3px 3px 0px;
 }
 
 
-main > h1 > span {
+main div.one h1 span {
     font-size: 16px;
 }
 
-main > ul {
+main div.one ul {
     list-style: none;
+    position: absolute;
+    bottom: 0;
 }
 
-main > ul > li {
-    float: left;
-    
+main div.one ul li {
+    float: right;
 }
 
-main > ul > li > a {
+main div.one ul li a {
     text-decoration: none;
-    padding: 4px;
+    padding: 8px;
     padding-inline: 6px;
     background-color: #434343;
     border-radius: 4px;
@@ -78,6 +85,45 @@ main > ul > li > a {
     transition-duration: .3s;
 }
 
-main > ul > li > a:hover {
+main div.one ul li a:hover {
     box-shadow: #F23a5c 2px 2px 0px;
+}
+
+main div.two {
+    background-color: #333333;
+}
+
+main div.two ul {
+    list-style: none;
+
+}
+main div.two li {
+    float: left;
+}
+
+main div.two button {
+    background-color: #333333;
+    border: none;
+    padding: 8px 8px 8px 8px;
+    z-index: 1;
+    transition-duration: .4s;
+    margin-inline: 4px;
+    border-radius: 2px;
+}
+
+main div.two button.active {
+    outline: 3px #F23a5c solid;
+    margin-inline: 8px;
+}
+
+main div.one div {
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    top: 170px;
+    transition-duration: .4s;
+}
+
+main div.one div.active {
+    top: 10px;
 }
