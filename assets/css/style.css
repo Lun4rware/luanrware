@@ -127,3 +127,7 @@ main div.one div {
 main div.one div.active {
     top: 10px;
 }
+
+main div.free span {
+    font-weight: 200;
+}
