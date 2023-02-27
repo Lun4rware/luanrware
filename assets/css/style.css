@@ -1,28 +1,26 @@
 html,body{ 
-	width:100%;
-	height: 100%;
-  overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-html{
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+#blob {
+    position: absolute;
+    border-radius: 50%;
+    background: #d21a3c;
+    width: 200px;
+    height: 200px;
+    top: -1000px;
+    translate: -50% -50%;
 }
 
-canvas {
-  display:block;
+#blur {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(32px);
 }
-
-#particles-js{
-  width: 100%;
-  height: 100%;
-  background-color: #232323;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-/* End Particles.js CSS Code */
 
 * {
     font-family: sans-serif;
@@ -106,14 +104,12 @@ main div.two button {
     border: none;
     padding: 8px 8px 8px 8px;
     z-index: 1;
-    transition-duration: .4s;
+    transition-duration: .2s;
     margin-inline: 4px;
-    border-radius: 2px;
 }
 
 main div.two button.active {
     outline: 3px #F23a5c solid;
-    margin-inline: 8px;
 }
 
 main div.one div {

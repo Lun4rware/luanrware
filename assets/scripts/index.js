@@ -1,9 +1,3 @@
-// Particles.js
-
-particlesJS.load('particles-js', 'assets/scripts/particles.json');
-
-// My Code
-
 debugMode = false;
 
 tabButtons   = document.querySelectorAll('main > div.two button');
@@ -21,18 +15,16 @@ tabButtons.forEach(i => {
     e.srcElement.classList.add('active');
     document.querySelector(`main > div.one > .${e.srcElement.id}`).classList.add('active')
 
-    // if (i.classList.contains('.active'));
   });
 });
 
+window.onpointermove = event => {
+  const { clientX, clientY } = event;
+  const blob = document.querySelector('#blob');
+  blob.style.top = `${clientY}px`
+  blob.style.left = `${clientX}px`
+}
 
-
-
-
-
-
-
-// dev console
 
 if (debugMode) {
 
